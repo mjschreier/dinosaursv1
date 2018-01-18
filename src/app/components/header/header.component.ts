@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  imgSrc: string;
+  imgAlt: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.imgSrc = '../../../assets/g-dino.png'
+    this.imgAlt = 'g-dino logo'
   }
 
 }
