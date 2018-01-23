@@ -1,3 +1,13 @@
 <section>
-  <p>Job List Test</p>
+  <h2>Job Listings</h2>
+  <ul id="job-listings">
+    <li *ngFor="let item of listings | reverse">
+      <h4>{{item.title}}</h4>
+      <small>{{item.pay}}</small>
+      <p>{{item.description}}</p>
+      <small>{{item.interested.length}} dino<span *ngIf="item.interested.length !== 1;else oneDino">s are</span> interested in this job</small>
+    </li>
+  </ul>
 </section>
+
+<ng-template #oneDino><span> is</span></ng-template>
