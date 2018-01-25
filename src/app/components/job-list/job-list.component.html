@@ -5,9 +5,10 @@
       <h4>{{item.title}}</h4>
       <small>{{item.pay}}</small>
       <p>{{item.description}}</p>
-      <small>{{item.interested.length}} dino<span *ngIf="item.interested.length !== 1;else oneDino">s are</span> interested in this job</small>
+      <small *ngIf="item.interested;else noDinos">{{item.interested.length}} dino<span *ngIf="item.interested.length !== 1;else oneDino">s are</span> interested in this job</small>
     </li>
   </ul>
 </section>
 
 <ng-template #oneDino><span> is</span></ng-template>
+<ng-template #noDinos><small>0 dinos are interested in this job</small></ng-template>
