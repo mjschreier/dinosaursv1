@@ -14,10 +14,10 @@ export class JobListComponent implements OnInit {
 
   ngOnInit() {
     this._listService.getList().subscribe(listing => {
-      this.listings = listing
+      this.listings = listing;
     })
     this._listService._newListingSubject.subscribe(submission => {
-      this.listings.push(submission)
+      this.listings.push(submission);
     })
   }
 

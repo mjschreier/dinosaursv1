@@ -1,0 +1,13 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 5px;
+  font-family: sans-serif;
+}
+
+footer small {
+  margin: 0 auto;
+  color: black;
+  font-size: .5rem;
+  margin-left: 10px;
+}
