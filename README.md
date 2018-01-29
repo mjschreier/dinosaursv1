@@ -23,7 +23,7 @@
 3. Navigate to this folder and run `npm test`.
 
 #### Deployed Link
-dinos1.surge.sh
+http://dinos1.surge.sh
 
 #### Framework of choice 
 Angular 5
