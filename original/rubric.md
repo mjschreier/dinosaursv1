@@ -13,4 +13,4 @@ A passing drill includes all of the following:
 
 Style:
 
-- [ ] Consistent code style 
+- [ ] Consistent code style
